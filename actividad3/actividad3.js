@@ -79,29 +79,29 @@ else
 console.log('Divisible entre 2');
 
 /*Ejercicio 4*/
-let numero;
-numero=Number(prompt('Ingresa un numero'));
+let num;
+num=Number(prompt('Ingresa un numero'));
 
-if(numero % 2)
+if(num % 2)
 alert('Es impar');
 else
 alert('Es par');
 
 /*Ejercicio 5*/
-let numero;
-numero=Number(prompt('Ingresa un numero'));
+let rifa;
+rifa=Number(prompt('Ingresa un numero'));
 
-if(numero==1000)
+if(rifa==1000)
 alert('Ganaste un Premio');
 else
-alert(numero +' ' 'Lo sentimos sigue participando');
+alert(rifa +' Lo sentimos sigue participando');
 
 /*Ejercicio 6*/
-let numero1;
-let numero2;
-numero1=Number(prompt('Ingresa el primer numero'));
-numero2=Number(prompt('Ingresa el segundo numero'));
-if(numero1<numero2)
+let num1;
+let num2;
+num1=Number(prompt('Ingresa el primer numero'));
+num2=Number(prompt('Ingresa el segundo numero'));
+if(num1<num2)
 alert('El menor es numero1');
 else
 alert('El menor es numero2');
