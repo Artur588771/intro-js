@@ -40,7 +40,6 @@ for(a=1;a<=50;a++)
 /*Ejercicio 5 Haciendo uso de for loop, imprimir una lista de numeros del 1 al 100
 y excluir un rango de 10 numeros, el inicio y el fin del rango los determinara el usuario*/
 let inicio;
-let fin;
 let y;
 inicio=Number(prompt('Teclea el numero de inicio del rango a excluir (menor a 100)'));
 if(inicio<=91)
