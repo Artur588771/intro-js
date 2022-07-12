@@ -1,4 +1,4 @@
-/*Crea una funcion que recibe dos parametros(una oracion y la palabra a buscar). Retornar
+/*1 Crea una funcion que recibe dos parametros(una oracion y la palabra a buscar). Retornar
 true o flase en caso de que una oracion contenga una palabra dada, es decir,  si yo mando 
 "Hola Mundo" y mando la palabra buscar "perro" me debe retornar un false, en cambio
  si yo mando mundo debe retornar true*/
@@ -13,7 +13,7 @@ true o flase en caso de que una oracion contenga una palabra dada, es decir,  si
 
  buscarPalabra("Hola Mundo","perro");
 
- /*Mediante una funcion, y dando un arreglo de enteros const numbers =[1,2,3,4,10,11], 
+ /*2 Mediante una funcion, y dando un arreglo de enteros const numbers =[1,2,3,4,10,11], 
  encuentra la suma de sus elementos*/
 
  function sumar(numbers)
@@ -28,7 +28,7 @@ true o flase en caso de que una oracion contenga una palabra dada, es decir,  si
 const numbers=[1,2,3,4,10,11];
 sumar(numbers);
 
-/*Desarrolla un metodo para identicar si una palabraes un palindromo*/
+/*3 Desarrolla un metodo para identicar si una palabraes un palindromo*/
 function palindromo(palabra)
 {
     let invertir="";
