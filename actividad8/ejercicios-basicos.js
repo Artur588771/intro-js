@@ -55,7 +55,7 @@ console.log(student);
         sclass: "VI",
         rollno: 12
     };    
-console.log(student.name);
+console.log(student.hasOwnProperty('name'));
 
     /** Escriba un programa de JavaScript para eliminar la propiedad rollno del siguiente objeto. 
  * Imprima también el objeto antes o después de eliminar la propiedad. 
@@ -172,7 +172,17 @@ let myObject = {
 myObject.myNewProp = "Hello world" // This should throw an exception or error because we don't want this object to be filled from outside...
 It supposed to be filled using it's own function
 Add any type of element on the object.. arrays, objects, int, strings, etc*/
+let bandRock = {
+    myFunction: function (){
 
+     this.band='ACDC';
+     this.genero='HardRock';
+     this.cancion='Back in black';		
+   
+    },
+};
+bandRock.myFunction();
+console.log(bandRock);
 
 /*var simpleExercise = [{a: 11, b:224, name: "M48 Bulldog"}, {a:23, b:56, name: "Object 140"}, {a: 32, b:75, name: "T57 Heavy"}];
 Hacer una función para que reciba ese arreglo de objetos
