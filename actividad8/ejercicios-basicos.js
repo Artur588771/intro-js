@@ -189,5 +189,17 @@ Hacer una función para que reciba ese arreglo de objetos
 y que retorne la suma de "a" y "b" de cada objeto y concatenarlo
 // al String "name" para que devuelva algo así:
 //     ["235 M48 Bulldog-=-79 Object 140-=-107 T57 Heavy" ]*/
+var simpleExercise = [
+ {a: 11, b:224, names: "M48 Bulldog"},
+ {a:23, b:56, names: "Object 140"},
+ {a: 32, b:75, names: "T57 Heavy"}];
+function concatenar(arr){
+    let str=[];
+    arr.forEach((item) => {        
+            str +=`${item.a+item.b} ${item.names} -=-`;                           
+    });    
+    return str;
+}
+console.log(concatenar(simpleExercise));
 
 
