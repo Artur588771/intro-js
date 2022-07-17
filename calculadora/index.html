@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora</title>
+</head>
+<body>
+    <div class="grid-container">
+        <span class="header" id="datos">0</span>        
+        <button id="igual" class="igual" onclick="resultado()">=</button>
+        <button id="suma" class="suma" onclick="recibirValores('+')">+</button>
+        <button id="resta" class="resta" onclick="recibirValores('-')">-</button>
+        <button id="multiplicar" class="multiplicar" onclick="recibirValores('*')">x</button>
+        <button id="dividir" class="dividir" onclick="recibirValores('/')">/</button>
+        <button id="limpiar" class="limpiar" onclick="resetear(0)">C</button>
+        <button id="siete" class="siete" onclick="recibirValores(7)">7</button>
+        <button id="ocho" class="ocho" onclick="recibirValores(8)">8</button>
+        <button id="nueve" class="nueve" onclick="recibirValores(9)">9</button>
+        <button id="cuatro" class="cuatro" onclick="recibirValores(4)">4</button>
+        <button id="cinco" class="cinco" onclick="recibirValores(5)">5</button>
+        <button id="seis" class="seis" onclick="recibirValores(6)">6</button>
+        <button id="uno" class="uno" onclick="recibirValores(1)">1</button>
+        <button id="dos" class="dos" onclick="recibirValores(2)">2</button>
+        <button id="tres" class="tres" onclick="recibirValores(3)">3</button>
+        <button id="cero" class="cero" onclick="recibirValores(0)">0</button>
+      </div>
+      <script src="app.js"></script>
+</body>
+</html>
