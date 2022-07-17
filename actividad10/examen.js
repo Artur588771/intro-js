@@ -68,7 +68,7 @@ console.log(calc(input,'b'));
 console.log(calc(input,'c'));
 console.log(calc(input,'d'));
 console.log(calc(input,'f'));
-console.log(calc(input,'f'));
+console.log(calc(input,'g'));
 
 //### Problema 4
 
@@ -85,3 +85,145 @@ function buscarNumero(arreglo){
   console.log('El segundo numero mas alto es '+arreglo[(arr.length)-2]);
 }
 console.log(buscarNumero(arr));
+
+//### Problema 5:
+
+//De la siguiente estructura de datos, contesta las siguientes preguntas creando 
+//un programa para cada una.
+let info = [
+    {
+        nombre: "Diego",
+        materias: [
+            {
+                nombreMateria: "español",
+                calificacion: 100
+            },
+            {
+                nombreMateria: "matemáticas",
+                calificacion: 70
+            },
+            {
+                nombreMateria: "ciencias",
+                calificacion: 55
+            }
+        ]
+    },
+    {
+        nombre: "Jorge",
+        materias: [
+            {
+                nombreMateria: "español",
+                calificacion: 60
+            },
+            {
+                nombreMateria: "matemáticas",
+                calificacion: 65
+            },
+            {
+                nombreMateria: "ciencias",
+                calificacion: 80
+            }
+        ]
+    }
+]
+//1. Retorna en un array las calificaciones de todos los estudiantes.
+function calif(arr){
+  let calificaciones=[];
+  arr.forEach(item => {        
+    item.materias.forEach(materias => {        
+    calificaciones.push(materias.calificacion);
+    })  
+});    
+ return calificaciones;
+}
+console.log(calif(info));
+
+//2. Retorna el promedio de cada uno de los alumnos, 
+//devolviendo un arreglo con objetos como esto: 
+/*
+```jsx
+[
+  { 
+    "Jorge": {
+      "promedio": 8.6
+    }
+  },
+  {
+    "Alumno": {
+      "promedio": 5.5
+    }
+  },
+  {
+    "Alumno": {
+      "promedio": 5.5
+    }
+  }
+]*/
+let promedio=[];
+function calPromedio(arr){  
+  let sumarCalif=0;
+  let incre=0;
+  let calProm=0;
+  arr.forEach(item => {        
+    item.materias.forEach(materias => {        
+      sumarCalif+=materias.calificacion;
+      incre++;
+    })
+    calProm=sumarCalif/incre;
+    promedio.push({[item.nombre] : {'promedio' : calProm}});    
+    sumarCalif=0;
+    incre=0;
+});      
+ return promedio;
+}
+console.log(calPromedio(info));
+//1. Retorna la calificación mas baja
+//2. Retorna la calificación mas alta
+let boleta=[];
+function calBoleta(arr){    
+  arr.forEach(item => {               
+    item.materias.forEach(materias => {        
+    boleta.push(materias.calificacion); 
+    })  
+});      
+ return (`La calificiacion mas Alta es ${Math.max(...boleta)}
+ La calificiacion mas Baja es ${Math.min(...boleta)}`);
+}
+console.log(calBoleta(info));
+
+//### Problema 6
+
+//Dadas dos matrices de enteros, encuentra qué elementos faltan 
+//en la segunda matriz de la primera matriz.
+
+matriz = [7,2,5,3,5,3]
+
+br = [7,2,5,4,6,3,5,3]
+//Los números que faltan en arr son `[4,6]`
+let comparar=br.filter(numero => matriz.indexOf(numero) == -1);
+console.log(comparar);
+
+//### Problema 7
+
+//**Objetos-Recursividad:**
+
+//Dada la siguiente estructura de datos, encuentra la cantidad de veces 
+//que está la propiedad `id`
+const root2 = {
+  id: '123',
+  child: [{id: '234',child: [{test: {id: 2}}]}],
+  child2: [{id: '345',child3: {id: '534'}}]
+};
+let contador=0;
+function contarId(arr) {
+  let arrProp = Object.getOwnPropertyNames(arr);  
+  arrProp.forEach(propiedad => {
+  if(propiedad == 'id'){
+    contador++;
+  }
+  else
+   contarId(arr[`${propiedad}`])})
+
+  return contador;
+}
+console.log(contarId(root2));
