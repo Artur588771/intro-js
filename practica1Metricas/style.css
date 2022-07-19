@@ -1,0 +1,28 @@
+.cuadroazul{
+    background-color: dodgerblue;
+    height: 250px;    
+}
+.cuadroverdec{
+    background-color: greenyellow;    
+    height: 130px;
+}
+.cuadroverdeo{
+    background-color: green;    
+    height: 130px;
+}
+.cuadrocafe{
+    background-color: brown;    
+    height: 100px;
+}
+.cuadrorosa{
+    background-color: palevioletred;    
+    height: 130px;
+}
+.cuadronaranja{
+    background-color: orange;    
+    height: 100px;
+}
+.cuadrocafe2{
+    background-color: burlywood;    
+    height: 100px;
+}
