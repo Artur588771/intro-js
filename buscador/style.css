@@ -1,0 +1,7 @@
+.bg-transformers{
+    background-image: url(../buscador/img/Elemental-Rift_Banner.jpg);
+}
+.object-fit{
+    object-fit: cover;
+    height: 100%;
+}

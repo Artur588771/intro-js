@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">        
+    <link rel="stylesheet" href="style.css">
+    <title>Wild Rift</title>
+</head>
+<body>
+    <header class="bg-transformers">
+        <div class="container">
+            <div class="row pt-4">
+                <div class="col 6">
+                    <div class="d-flex align-items-center h-100">
+                        <h4 class="mb-0 text-primary">Buscador Js</h4>
+                    </div>
+                    
+                </div>
+                <div class="col 6">
+                    <nav>
+                        <ul class="nav justify-content-end">
+                            <li class="nav-item">
+                              <a class="nav-link text-primary active" aria-current="page" href="#">Active</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link text-primary" href="#">Link</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link text-primary" href="#">Link</a>
+                            </li>                            
+                          </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h1 class="text-center text-primary pt-5">Buscador Js</h1>
+                    <div class="card my-5 p-4">
+                       <form id="form-busqueda">
+                        <div class="row">
+                            <div class="col">
+                              <label for="inputName">Campeon</label>
+                              <input type="text" class="form-control" id="inputName" placeholder="Campeon" aria-label="First name">
+                            </div>
+                            <div class="col">
+                              <label for="inputDifi">Dificultad</label>  
+                                <select id="inputDifi" class="form-select">
+                                    <option value selected>Choose...</option>
+                                    <option value="bajo">Bajo</option>
+                                    <option value="medio">Medio</option>
+                                    <option value="alto">Alto</option>                                 
+                                </select>                                  
+                            </div>
+                            <div class="col">
+                              <label for="inputRol">Roles</label>  
+                                <select id="inputRol" class="form-select">
+                                  <option value selected>Choose...</option>
+                                  <option value="asesinos">Asesinos</option>
+                                  <option value="peleadores">Peleadores</option>
+                                  <option value="magos">Magos</option>
+                                  <option value="tiradores">Tiradores</option>
+                                  <option value="apoyos">Apoyos</option>
+                                  <option value="tanques">Tanques</option>                                 
+                              </select>  
+                            </div>
+                            <div class="col d-flex align-items-end">
+                                <button type="submit" class="btn btn-success w-100">Buscar</button>
+                            </div>
+                          </div>
+                       </form> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="bg-dark text-white py-5">
+        <div class="container">
+            <div id="box-campeones" class="row row-cols-2">
+                <div class="col mb-3">
+                    <div class="card bg-secondary flex-row">
+                        <div class="w-50">
+                            <img src="img/Katarina_ChampThumb.jpg" class="img-fluid object-fit" alt="">
+                        </div>
+                        <div class="card-body w-50">
+                            <h2 class="card-title">Katarina</h2>
+                            <p>La Daga Siniestra</p>
+                            <p>Asesina/Maga</p>
+                            <P>Descripcion</P>
+                            <p>Con un juicio decisivo y letal en el combate, 
+                                Katarina es una de las mejores asesinas noxianas.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-3">
+                    <div class="card bg-secondary flex-row">
+                        <div class="w-50">
+                            <img src="img/Katarina_ChampThumb.jpg" class="img-fluid object-fit" alt="">
+                        </div>
+                        <div class="card-body w-50">
+                            <h2 class="card-title">Katarina</h2>
+                            <p>La Daga Siniestra</p>
+                            <p>Asesina/Maga</p>
+                            <P>Descripcion</P>
+                            <p>Con un juicio decisivo y letal en el combate, 
+                                Katarina es una de las mejores asesinas noxianas.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-3">
+                    <div class="card bg-secondary flex-row">
+                        <div class="w-50">
+                            <img src="img/Katarina_ChampThumb.jpg" class="img-fluid object-fit" alt="">
+                        </div>
+                        <div class="card-body w-50">
+                            <h2 class="card-title">Katarina</h2>
+                            <p>La Daga Siniestra</p>
+                            <p>Asesina/Maga</p>
+                            <P>Descripcion</P>
+                            <p>Con un juicio decisivo y letal en el combate, 
+                                Katarina es una de las mejores asesinas noxianas.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
