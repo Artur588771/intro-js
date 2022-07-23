@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">        
+    <link rel="stylesheet" href="css/style.css">
+    <title>Bandas de Rock</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row pt-5">
+            <div class="col-3">
+                <div>
+                    <div class="row w-75">
+                      <form id="form-busqueda">
+                        <div class="col">
+                          <input type="text" id="inputsearch" class="form-control" placeholder="Banda" aria-label="First name">                          
+                        </div>                        
+                    </div>
+                        <div class="pt-3">
+                            <button class="btn btn-primary" id="Buscar" type="submit">Buscar</button>
+                        </div>
+                      </form>                    
+                    <nav>
+                        <p class="pt-3">Bandas</p>
+                        <ul class="nav flex-column">
+                            <li class="nav-item">
+                              <a class="nav-link" id="inputAll" aria-current="page" href="#">All</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" id="inputMetal" value="Metal" href="#">Metal</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" id="inputPunk" value="Punk" href="#">Punk</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="inputHard" value="HardRock" href="#">HardRock</a>
+                              </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="inputRar" value="Rock-and-roll" href="#">Rock-and-roll</a>
+                            </li>
+                          </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="col-9">
+                <div class="row row-cols-3" id="boxbandas">
+                    <!-- <div class="col mb-3">
+                        <div class="card">
+                            <img src="img/blacksabbath.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Black Sabbath</h5>
+                              <p class="card-text">Heavy Metal</p>
+                            </div>
+                          </div>                        
+                    </div>
+                    <div class="col mb-3">
+                        <div class="card">
+                            <img src="img/blacksabbath.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Black Sabbath</h5>
+                              <p class="card-text">Heavy Metal</p>
+                            </div>
+                          </div>                        
+                    </div>
+                    <div class="col mb-3">
+                        <div class="card">
+                            <img src="img/blacksabbath.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Black Sabbath</h5>
+                              <p class="card-text">Heavy Metal</p>
+                            </div>
+                          </div>                        
+                    </div>
+                    <div class="col mb-3">
+                        <div class="card">
+                            <img src="img/blacksabbath.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Black Sabbath</h5>
+                              <p class="card-text">Heavy Metal</p>
+                            </div>
+                          </div>                        
+                    </div> -->
+                </div>                
+            </div>
+        </div>
+    </div>
+    <script src="js/bd.js"></script>
+    <script src="js/code.js"></script>
+</body>
+</html>
